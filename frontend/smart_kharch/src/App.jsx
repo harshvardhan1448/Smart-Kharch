@@ -5,6 +5,7 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
+import { Toaster } from 'react-hot-toast';
 
 import Login from './pages/Auth/Login';
 import SignUp from './pages/Auth/SignUp';
@@ -21,6 +22,7 @@ const App = () => {
   return (
     <UserProvider>
       <div>
+        <Toaster position="top-right" />
         <Router>
           <Routes>
             <Route path="/" element={<Root />} />
