@@ -10,13 +10,11 @@ const dashboardRoutes = require("./routes/dashboardRoutes");
 const app = express();
 
 // Middleware to handle CORS
-app.use(
-    cors({
-        origin: process.env.CLIENT_URL || "*",
-        methods: ["GET", "PUT", "POST", "DELETE"],
-        allowedHeaders: ["Content-Type", "Authorization"],
-    })
-);
+app.use(cors({
+  origin: "https://your-frontend-project.vercel.app", // Replace with your actual Vercel URL
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"]
+}));
 
 
 app.use(express.json());
