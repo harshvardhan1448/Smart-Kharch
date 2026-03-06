@@ -1,4 +1,4 @@
-export const BASE_URL = 'https://smart-kharch.vercel.app';
+export const BASE_URL = 'https://smart-kharch.onrender.com';
 
 export const API_PATHS = {
     AUTH: {
